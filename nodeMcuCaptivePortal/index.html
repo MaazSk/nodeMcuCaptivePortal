@@ -21,7 +21,7 @@
             border-radius: 8px;
             padding: 20px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            max-width: 400px;
+            max-width: 100%;
             width: 90%;
             text-align: center;
         }
@@ -29,10 +29,12 @@
         form {
             display: flex;
             flex-direction: column;
+            align-items: center; /* Align form items in the center horizontally */
         }
 
         label {
             font-weight: bold;
+            text-align: left; /* Align label text to the left */
         }
 
         input[type='text'],
@@ -60,7 +62,7 @@
             background-color: #0056b3;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
             .container {
                 width: 95%;
             }
@@ -69,8 +71,8 @@
 </head>
 <body>
     <div class="container">
-        <img src="jio_logo.jpg" alt="Logo" style="width: 100px; height: 100px;">
-        <h2>Sign Up for your free Jio Internet</h2>
+        <!-- <img src="your-logo.png" alt="Logo" style="width: 100px; height: 100px;"> -->
+        <h2>Sign Up</h2>
         <form id="signup-form" method="post" action="/submit">
             <label for="username">Enter Your Name:</label>
             <input type="text" id="username" name="username" required>
